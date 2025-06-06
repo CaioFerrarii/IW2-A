@@ -30,18 +30,18 @@
         <script>
             function Clicar()
             {
-            var cep = document.getElementById ("cidade")
-            var url = "viacep.com.br/ws/"+cep.value+"/jason"
-            fatch (url)
-            .then ((resposta) => resposta.json ())
-            .then ((dados) => {
+            var cep = document.getElementById ("cep")
+            var url = "https://viacep.com.br/ws/"+cep.value+"/json/"
+            fetch (url)
+            .then ((resposta)=> resposta.json ())
+            .then ((dados)=> {
                 var cidade = document.getElementById ("cidade")
                 var estado = document.getElementById ("estado")
-                var endereço = document.getElementById ("endereço")
+                var endereco = document.getElementById ("endereco")
                 var bairro = document.getElementById ("bairro")
                 cidade.value = dados.localidade
                 estado.value = dados.estado
-                endereço.value = dados.logradouro
+                endereco.value = dados.logradouro
                 bairro.value = dados.bairro
             })
         }
