@@ -125,5 +125,166 @@
         }
 
     </script>
+
+<table class="tabela2">
+    <thead> 
+        <tr>
+            <th>B</th>
+            <th>I</th>
+            <th>N</th>
+            <th>G</th>
+            <th>O</th>
+        </tr>
+    </thead>
+
+    <tbody>
+            <tr>
+                <td id="1" onclick="MarcarCartela(this)">1</td>
+                <td id="2"onclick="MarcarCartela(this)">2</td>
+                <td id="3"onclick="MarcarCartela(this)">3</td>
+                <td id="4"onclick="MarcarCartela(this)">4</td>
+                <td id="5"onclick="MarcarCartela(this)">5</td>
+                <td id="6"onclick="MarcarCartela(this)">6</td>
+                <td id="7"onclick="MarcarCartela(this)">7</td>
+                <td id="8"onclick="MarcarCartela(this)">8</td>
+                <td id="9"onclick="MarcarCartela(this)">9</td>
+                <td id="10"onclick="MarcarCartela(this)">10</td>
+            </tr>
+            <tr>
+                <td id="11" onclick="MarcarCartela(this)">11</td>
+                <td id="12"onclick="MarcarCartela(this)">12</td>
+                <td id="13"onclick="MarcarCartela(this)">13</td>
+                <td id="14"onclick="MarcarCartela(this)">14</td>
+                <td id="15"onclick="MarcarCartela(this)">15</td>
+                <td id="16"onclick="MarcarCartela(this)">16</td>
+                <td id="17"onclick="MarcarCartela(this)">17</td>
+                <td id="18"onclick="MarcarCartela(this)">18</td>
+                <td id="19"onclick="MarcarCartela(this)">19</td>
+                <td id="20"onclick="MarcarCartela(this)">20</td>
+            </tr>
+            <tr>
+                <td id="11" onclick="MarcarCartela(this)">21</td>
+                <td id="22"onclick="MarcarCartela(this)">22</td>
+                <td id="23"onclick="MarcarCartela(this)">23</td>
+                <td id="24"onclick="MarcarCartela(this)">24</td>
+                <td id="25"onclick="MarcarCartela(this)">25</td>
+                <td id="26"onclick="MarcarCartela(this)">26</td>
+                <td id="27"onclick="MarcarCartela(this)">27</td>
+                <td id="28"onclick="MarcarCartela(this)">28</td>
+                <td id="29"onclick="MarcarCartela(this)">29</td>
+                <td id="30"onclick="MarcarCartela(this)">30</td>
+            </tr>
+            <tr>
+                <td id="31" onclick="MarcarCartela(this)">31</td>
+                <td id="32"onclick="MarcarCartela(this)">32</td>
+                <td id="33"onclick="MarcarCartela(this)">33</td>
+                <td id="34"onclick="MarcarCartela(this)">34</td>
+                <td id="35"onclick="MarcarCartela(this)">35</td>
+                <td id="36"onclick="MarcarCartela(this)">36</td>
+                <td id="37"onclick="MarcarCartela(this)">37</td>
+                <td id="38"onclick="MarcarCartela(this)">38</td>
+                <td id="39"onclick="MarcarCartela(this)">39</td>
+                <td id="40"onclick="MarcarCartela(this)">40</td>
+            </tr>
+            <tr>
+                <td id="41" onclick="MarcarCartela(this)">41</td>
+                <td id="42"onclick="MarcarCartela(this)">42</td>
+                <td id="43"onclick="MarcarCartela(this)">43</td>
+                <td id="44"onclick="MarcarCartela(this)">44</td>
+                <td id="45"onclick="MarcarCartela(this)">45</td>
+                <td id="46"onclick="MarcarCartela(this)">46</td>
+                <td id="47"onclick="MarcarCartela(this)">47</td>
+                <td id="48"onclick="MarcarCartela(this)">48</td>
+                <td id="49"onclick="MarcarCartela(this)">49</td>
+                <td id="50"onclick="MarcarCartela(this)">50</td>
+            </tr>
+            <tr>
+                <td id="51" onclick="MarcarCartela(this)">51</td>
+                <td id="52"onclick="MarcarCartela(this)">52</td>
+                <td id="53"onclick="MarcarCartela(this)">53</td>
+                <td id="54"onclick="MarcarCartela(this)">54</td>
+                <td id="55"onclick="MarcarCartela(this)">55</td>
+                <td id="56"onclick="MarcarCartela(this)">56</td>
+                <td id="57"onclick="MarcarCartela(this)">57</td>
+                <td id="58"onclick="MarcarCartela(this)">58</td>
+                <td id="59"onclick="MarcarCartela(this)">59</td>
+                <td id="60"onclick="MarcarCartela(this)">60</td>
+            </tr>
+            <tr>
+                <td id="61" onclick="MarcarCartela(this)">61</td>
+                <td id="62"onclick="MarcarCartela(this)">62</td>
+                <td id="63"onclick="MarcarCartela(this)">63</td>
+                <td id="64"onclick="MarcarCartela(this)">64</td>
+                <td id="65"onclick="MarcarCartela(this)">65</td>
+                <td id="66"onclick="MarcarCartela(this)">66</td>
+                <td id="67"onclick="MarcarCartela(this)">67</td>
+                <td id="68"onclick="MarcarCartela(this)">68</td>
+                <td id="69"onclick="MarcarCartela(this)">69</td>
+                <td id="70"onclick="MarcarCartela(this)">70</td>
+            </tr>
+            <tr>
+                <td id="71" onclick="MarcarCartela(this)">71</td>
+                <td id="72"onclick="MarcarCartela(this)">72</td>
+                <td id="73"onclick="MarcarCartela(this)">73</td>
+                <td id="74"onclick="MarcarCartela(this)">74</td>
+                <td id="75"onclick="MarcarCartela(this)">75</td>
+            </tr>
+    </tbody>
+</table>
+<button onclick="sortearNumero()">Sortear Número</button>
+
+<script>
+    // Array com números de 1 a 75 embaralhados
+    let numerosSorteados = [];
+  
+    function embaralharArray(arr) {
+      for (let i = arr.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [arr[i], arr[j]] = [arr[j], arr[i]];
+      }
+      return arr;
+    }
+  
+    // Inicializa o array embaralhado (chamar antes do primeiro sorteio)
+    function inicializarSorteio() {
+      numerosSorteados = [];
+      for (let i = 1; i <= 75; i++) {
+        numerosSorteados.push(i);
+      }
+      embaralharArray(numerosSorteados);
+    }
+  
+    // Função para sortear o próximo número e marcar na tabela
+    function sortearNumero() {
+      if (numerosSorteados.length === 0) {
+        alert("Todos os números já foram sorteados!");
+        return;
+      }
+      const numero = numerosSorteados.pop(); // pega o último da lista (já embaralhada)
+  
+      // Marca o número na tabela pelo id
+      const celula = document.getElementById(numero.toString());
+      if (celula) {
+        celula.style.backgroundColor = "black";
+        celula.style.color = "white";
+      }
+  
+      alert(`Número sorteado: ${numero}`);
+    }
+  
+    // Iniciar o sorteio automaticamente ao carregar a página (opcional)
+    window.onload = () => {
+      inicializarSorteio();
+    };
+  </script>
+  
+<br>
+<button id="botao" onclick="Piscar()">
+    Piscando o botão
+</button>
+<button onclick="GerarCartela()">
+    Gerar Cartela
+</button>
+
 </body>
 </html>
